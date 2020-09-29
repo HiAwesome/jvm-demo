@@ -19,7 +19,7 @@
         <spock-core.version>2.0-M3-groovy-3.0</spock-core.version>
         <junit-jupiter.version>5.7.0</junit-jupiter.version>
         <groovy-all.version>3.0.5</groovy-all.version>
-        <cglib-nodep.version>3.3.0</cglib-nodep.version>
+        <cglib.version>3.3.0</cglib.version>
         <objenesis.version>3.1</objenesis.version>
         <byte-buddy.version>1.10.14</byte-buddy.version>
         <gmavenplus-plugin.version>1.8.1</gmavenplus-plugin.version>
@@ -72,7 +72,7 @@
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
-            <version>${cglib-nodep.version}</version>
+            <version>${cglib.version}</version>
             <scope>${spock.scope}</scope>
         </dependency>
 
@@ -143,6 +143,13 @@
             <artifactId>scala-compiler</artifactId>
             <version>${scala.version}</version>
             <scope>${scala.scope}</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
         </dependency>
     </dependencies>
 
