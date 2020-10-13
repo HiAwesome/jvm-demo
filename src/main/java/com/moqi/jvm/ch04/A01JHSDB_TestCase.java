@@ -2,9 +2,11 @@ package com.moqi.jvm.ch04;
 
 /**
  * -Xmx10m -XX:+UseSerialGC -XX:-UseCompressedOops
- * 运行时选择 LTS 的 Java 11
  *
  * staticObj, instanceObj, localObj 存放在哪里？
+ *
+ * 测试 N 个 JDK 版本，没有实现书中效果
+ * 参考 https://yuck1125.github.io/2019/10/17/use-HSDB-verify-Class-in-heap/ 进行了一些练习
  *
  * @author moqi On 10/13/20 15:07
  */
