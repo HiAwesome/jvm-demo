@@ -12,7 +12,10 @@ import java.lang.reflect.Field;
  *   at sun.misc.Unsafe.allocateMemory(Native Method)
  *   at org.fenixsoft.oom.DMOOM.main(DMOOM.java:20)
  *
- * 复现书中异常失败，JDK 为自己编译的 JDK12
+ * 复现书中异常失败，JDK 为 LTS 的 11
+ *
+ * 参考 https://blog.csdn.net/jameskaron/article/details/105416551 和 https://youtrack.jetbrains.com/issue/IDEA-180033
+ * 将 Java Compile 设定为 11
  *
  * @author moqi
  * On 9/29/20 14:54
