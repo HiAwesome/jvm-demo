@@ -3,9 +3,9 @@ package com.moqi.jvm.ch03;
 /**
  * 对象优先在 Eden 分配
  *
- * Before JDK9: -Xms20M -Xmx20M -Xmn10M -XX:+UseSerialGC -XX:SurvivorRatio=8 -XX:+PrintGCDetails
+ * Before JDK9: -XX:+PrintGCDetails -Xms20M -Xmx20M -Xmn10M -XX:+UseSerialGC -XX:SurvivorRatio=8
  *
- * After JDK9: -Xms20M -Xmx20M -Xmn10M -XX:+UseSerialGC -XX:SurvivorRatio=8 -Xlog:gc*
+ * After JDK9: -Xlog:gc* -Xms20M -Xmx20M -Xmn10M -XX:+UseSerialGC -XX:SurvivorRatio=8
  *
  * @author moqi On 10/13/20 09:53
  */
@@ -46,7 +46,9 @@ public class A03TestAllocation {
         allocation1 = new byte[2 * _1MB];
         allocation2 = new byte[2 * _1MB];
         allocation3 = new byte[2 * _1MB];
-        allocation4 = new byte[4 * _1MB]; // 出现一次Minor GC
+
+        // 出现一次Minor GC
+        allocation4 = new byte[4 * _1MB];
     }
 
 }
