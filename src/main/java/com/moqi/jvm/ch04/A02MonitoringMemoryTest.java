@@ -11,7 +11,7 @@ import java.util.List;
  * @author moqi On 10/14/20 10:28
  */
 
-public class A02MonitoringTest {
+public class A02MonitoringMemoryTest {
 
     /**
      * 内存占位符对象，一个 OOMObject 大约占据 64kb
