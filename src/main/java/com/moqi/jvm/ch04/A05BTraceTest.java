@@ -24,68 +24,6 @@ public class A05BTraceTest {
         return a + b;
     }
 
-    /**
-     * * Starting BTrace task
-     * ** Compiling the BTrace script ...
-     * *** Compiled
-     * ** Instrumenting 1 classes ...
-     * *** Done
-     * ** BTrace up&running
-     * <p>
-     * *** Done
-     * ** BTrace up&running
-     * <p>
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:670
-     * 方法参数B:251
-     * 方法结果:921
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:889
-     * 方法参数B:717
-     * 方法结果:1606
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:130
-     * 方法参数B:23
-     * 方法结果:153
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:461
-     * 方法参数B:861
-     * 方法结果:1322
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:738
-     * 方法参数B:623
-     * 方法结果:1361
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:785
-     * 方法参数B:861
-     * 方法结果:1646
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:388
-     * 方法参数B:487
-     * 方法结果:875
-     * 调用堆栈:
-     * com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
-     * com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
-     * 方法参数A:266
-     * 方法参数B:424
-     * ** BTrace has stopped
-     * 方法结果:690
-     * ** BTrace has stopped
-     */
     public static void main(String[] args) throws IOException {
 
         A05BTraceTest test = new A05BTraceTest();
@@ -124,4 +62,67 @@ public static void func(@Self com.moqi.jvm.ch04.A05BTraceTest instance, int a, i
     println(strcat("方法结果:",str(result)));
 }
 }
+*/
+
+/**
+Starting BTrace task
+Compiling the BTrace script ...
+Compiled
+Instrumenting 1 classes ...
+Done
+BTrace up&running
+
+Done
+BTrace up&running
+
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:670
+方法参数B:251
+方法结果:921
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:889
+方法参数B:717
+方法结果:1606
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:130
+方法参数B:23
+方法结果:153
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:461
+方法参数B:861
+方法结果:1322
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:738
+方法参数B:623
+方法结果:1361
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:785
+方法参数B:861
+方法结果:1646
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:388
+方法参数B:487
+方法结果:875
+调用堆栈:
+com.moqi.jvm.ch04.A05BTraceTest.add(A05BTraceTest.java:24)
+com.moqi.jvm.ch04.A05BTraceTest.main(A05BTraceTest.java:36)
+方法参数A:266
+方法参数B:424
+** BTrace has stopped
+方法结果:690
+** BTrace has stopped
 */
