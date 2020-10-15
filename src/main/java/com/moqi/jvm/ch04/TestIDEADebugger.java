@@ -3,6 +3,7 @@ package com.moqi.jvm.ch04;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * 练习 IDEA Debugger 功能
@@ -16,25 +17,28 @@ public class TestIDEADebugger {
 
     public static void main(String[] args) {
 
-        testException(10);
+        testException();
 
-        testReload(10);
+        testReload();
 
         testJavaStream();
     }
 
-    private static int testException(int i) {
-        return i / 0;
+    private static int testException() {
+        return 10 / 0;
     }
 
-    private static void testReload(int i) {
-        int max = getMax(i, 100);
-        System.out.println("max = " + max);
+    private static void testReload() {
+        int value = new Random().nextInt(1000);
+        System.out.println("value = " + value);
+
+        int doubleValue = getDoubleValue(value);
+        System.out.println("doubleValue = " + doubleValue);
     }
 
-    private static int getMax(int a, int b) {
-        return Math.max(a, b);
-        // return Math.min(a, b);
+    private static int getDoubleValue(int i) {
+        return i * 2;
+        // return i * 100;
     }
 
     private static void testJavaStream() {
