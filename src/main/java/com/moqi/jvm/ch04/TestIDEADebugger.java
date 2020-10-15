@@ -22,7 +22,8 @@ public class TestIDEADebugger {
     }
 
     private static int getMax(int a, int b) {
-        return Math.min(a, b);
+        return Math.max(a, b);
+        // return Math.min(a, b);
     }
 
     private static int getArithmeticException(int i) {
