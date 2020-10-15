@@ -16,20 +16,25 @@ public class TestIDEADebugger {
 
     public static void main(String[] args) {
 
-        getArithmeticException(10);
+        testException(10);
+
+        testReload(10);
 
         testJavaStream();
+    }
+
+    private static int testException(int i) {
+        return i / 0;
+    }
+
+    private static void testReload(int i) {
+        int max = getMax(i, 100);
+        System.out.println("max = " + max);
     }
 
     private static int getMax(int a, int b) {
         return Math.max(a, b);
         // return Math.min(a, b);
-    }
-
-    private static int getArithmeticException(int i) {
-        int max = getMax(i, 100);
-        System.out.println("max = " + max);
-        return i / 0;
     }
 
     private static void testJavaStream() {
