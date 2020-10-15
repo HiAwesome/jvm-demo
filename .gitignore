@@ -2,3 +2,4 @@
 target
 *.DS_Store
 *.iml
+src/main/java/com/moqi/jvm/ch06/A01TestClass.class
