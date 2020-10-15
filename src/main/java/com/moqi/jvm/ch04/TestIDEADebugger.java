@@ -6,7 +6,7 @@ import java.util.Objects;
 
 /**
  * 练习 IDEA Debugger 功能
- *
+ * <p>
  * 练习: https://moqimoqidea.github.io/2017/06/02/IDEA-Debugger/
  *
  * @author moqi On 10/15/20 16:22
@@ -15,11 +15,20 @@ import java.util.Objects;
 public class TestIDEADebugger {
 
     public static void main(String[] args) {
+
+        getArithmeticException(10);
+
         testJavaStream();
+    }
 
+    private static int getMax(int a, int b) {
+        return Math.min(a, b);
+    }
 
-        TestIDEADebugger t = new TestIDEADebugger();
-        t.getArithmeticException(10);
+    private static int getArithmeticException(int i) {
+        int max = getMax(i, 100);
+        System.out.println("max = " + max);
+        return i / 0;
     }
 
     private static void testJavaStream() {
@@ -34,16 +43,6 @@ public class TestIDEADebugger {
                         .limit(4)
                         .sum()
         );
-    }
-
-    private int getMax(int a, int b) {
-        return Math.min(a, b);
-    }
-
-    private int getArithmeticException(int i) {
-        int max = getMax(i, 100);
-        System.out.println("max = " + max);
-        return i / 0;
     }
 
 }
