@@ -5,6 +5,10 @@ import java.io.Serializable;
 /**
  * 重载方法匹配优先级
  *
+ * 重载顺序： char>int>long>float>double
+ *
+ * 重载 -> 自动装箱 -> 自动转型 -> 变长参数列表
+ *
  * @author moqi On 10/16/20 15:24
  */
 
