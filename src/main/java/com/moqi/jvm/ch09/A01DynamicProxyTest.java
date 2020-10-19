@@ -45,6 +45,7 @@ public class A01DynamicProxyTest {
      * Hello world
      */
     public static void main(String[] args) {
+        // 生成的代理类 class 文件在顶级目录 com/moqi/jvm/ch09/ 下，而非 src 下
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
         IHello hello = (IHello) new DynamicProxy().bind(new Hello());
