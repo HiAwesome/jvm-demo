@@ -47,6 +47,8 @@ public class A01DynamicProxyTest {
     public static void main(String[] args) {
         IHello hello = (IHello) new DynamicProxy().bind(new Hello());
         hello.sayHello();
+
+        System.getProperties().put("sun.misc.proxyGenerator.saveGenerateFiles", "trur");
     }
 
 }
