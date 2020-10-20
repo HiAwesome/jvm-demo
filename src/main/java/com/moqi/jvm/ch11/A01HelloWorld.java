@@ -8,4 +8,8 @@ package com.moqi.jvm.ch11;
 
 public class A01HelloWorld {
 
+    public static void main(String[] args) {
+        System.out.println("Hello World.");
+    }
+
 }
