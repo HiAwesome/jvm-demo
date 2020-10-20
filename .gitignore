@@ -4,7 +4,7 @@ target
 *.iml
 src/main/java/com/moqi/jvm/ch06/*.class
 src/main/java/com/moqi/jvm/ch08/*.class
-com/moqi/jvm/ch09/*.class
+com
 src/main/java/com/moqi/jvm/ch09/*.class
 src/main/java/com/moqi/jvm/ch10/*.class
 src/main/java/com/moqi/jvm/ch11/*.class
