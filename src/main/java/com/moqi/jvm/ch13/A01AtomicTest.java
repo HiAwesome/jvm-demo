@@ -1,17 +1,19 @@
-package com.moqi.jvm.ch12;
+package com.moqi.jvm.ch13;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Volatile 变量自增运算测试
+ * Atomic 变量自增运算测试
  *
- * @author moqi On 10/20/20 17:54
+ * @author moqi On 10/21/20 09:54
  */
 
-public class A01VolatileTest {
+public class A01AtomicTest {
 
-    public static volatile int race = 0;
+    public static AtomicInteger race = new AtomicInteger(0);
 
     public static void increase() {
-        race++;
+        race.incrementAndGet();
     }
 
     private static final int THREADS_COUNT = 20;
