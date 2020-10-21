@@ -29,11 +29,10 @@ public class A01VolatileTest {
             threads[i].start();
         }
 
-        // IDEA 加上这一段代码会卡住
-        // 等待所有累加线程都结束
-        // while (Thread.activeCount() > 1) {
-        //     Thread.yield();
-        // }
+        // IDEA 设定大于 2，其他大于 1 即可
+        while (Thread.activeCount() > 2) {
+            Thread.yield();
+        }
 
         System.out.println("race = " + race);
     }
